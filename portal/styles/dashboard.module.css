@@ -1,0 +1,41 @@
+.title,
+.title1 {
+  position: relative;
+  color: var(--Dark-Green, #1C2925);
+  font-family: "Hedvig Letters Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.title::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: -5px; /* 调整竖线位置 */
+  height: 16px;
+  width: 3px;
+  background: var(--Dark-Green, #1C2925);
+}
+.title1::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: -5px; /* 调整竖线位置 */
+  height: 16px;
+  width: 3px;
+  background-color: #8c64f7;
+}
+.btn::before {
+  position: absolute;
+  width: 15rpx;
+  height: 15rpx;
+  border-top: 4rpx solid #333;
+  border-right: 4rpx solid #333;
+  transform: rotate(45deg);
+}
+.textEllipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

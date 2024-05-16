@@ -1,0 +1,95 @@
+/* styles.css */
+
+.layout {
+	display: flex;
+	min-width: 1133px;
+}
+
+.sidebar {
+	display: flex;
+	flex-direction: column;
+	flex-shrink: 0;
+	width: 131px;
+	background: #fafbf6;
+	box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.05);
+	min-height: 100vh;
+	color: #bfbfbf;
+}
+.sidebarMenu,
+.mediumMenu {
+	list-style: none;
+	padding: 0;
+}
+
+.sidebarMenu li,
+.mediumMenu li {
+	padding: 0 10px;
+	font-size: 12px;
+	margin-bottom: 27px;
+}
+@media (max-height: 754px) {
+	.sidebarMenu li {
+		margin-bottom: 10px;
+	}
+}
+@media (max-height: 754px) {
+	.sidebarMenu li {
+		margin-bottom: 10px;
+	}
+}
+.mediumMenu a {
+	color: #c8c8c8;
+	text-align: center;
+	/* 正文 */
+	font-family: "Hedvig Letters Sans";
+	font-size: 12px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	cursor: pointer;
+}
+.contentWrapper {
+	flex: 1; /* 子元素撑满父元素的高度 */
+	display: flex;
+	flex-direction: column;
+}
+
+.content {
+	flex: 1; /* 内容区域撑满父元素的高度 */
+}
+.rightSide {
+	width: 20%;
+	background: #f6f7fe;
+}
+.sidebarMenu li:hover {
+	opacity: 0.8;
+	color: var(--Dark-Green, #1c2925);
+	background: linear-gradient(90deg, #dff0a2 0%, rgba(223, 240, 162, 0) 100%);
+}
+.logoWrap {
+	font-family: Hedvig Letters Sans;
+	font-size: 50.28px;
+	font-weight: 400;
+	line-height: 65.47px;
+	text-align: center;
+	background: linear-gradient(180deg, #bf69ff 0%, #5d54fd 100%);
+	background-clip: text;
+	color: transparent;
+}
+.active {
+	color: var(--Dark-Green, #1c2925);
+	text-align: center;
+	font-family: "Hedvig Letters Sans";
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	position: relative;
+}
+.active::before {
+	content: "";
+	position: absolute;
+	left: 0; /* 调整竖线位置 */
+	height: 48px;
+	width: 5px;
+	background-color: #1c2925;
+}

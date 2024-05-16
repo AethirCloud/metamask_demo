@@ -1,0 +1,78 @@
+.title {
+	width: 62px;
+	height: 65px;
+	font-family: Hedvig Letters Sans;
+	font-size: 50.28px;
+	font-weight: 400;
+	line-height: 65.47px;
+	text-align: left;
+	background: linear-gradient(180deg, #bf69ff 0%, #5d54fd 100%);
+	background-clip: text;
+	color: transparent;
+	margin: 10px 0 0 10px;
+}
+
+.box {
+	background: #f3f7eb;
+	box-sizing: border-box;
+}
+.content {
+	background: #f7f6fe;
+	min-height: 90vh;
+	border-radius: 50px;
+	box-shadow: 0 0 20px #ebf1f9;
+	padding: 20px 40px;
+	box-sizing: border-box;
+}
+.text {
+	color: #4e3395;
+	font-family: "Hedvig Letters Sans";
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+}
+.hint {
+	color: #254000;
+	font-feature-settings:
+		"clig" off,
+		"liga" off;
+	font-family: "Hedvig Letters Sans";
+	font-size: 12px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 12px;
+	border-radius: 8px;
+	background: var(--Gray-gray-1, #fff);
+	box-shadow:
+		0px 9px 28px 8px rgba(0, 0, 0, 0.05),
+		0px 6px 16px 0px rgba(0, 0, 0, 0.08),
+		0px 3px 6px -4px rgba(0, 0, 0, 0.12);
+	width: 382px;
+	padding: 9px 16px;
+	gap: 5px;
+	float: right;
+}
+.here {
+	color: var(--Lime-lime-10, #254000);
+	font-feature-settings:
+		"clig" off,
+		"liga" off;
+	font-family: "Hedvig Letters Sans";
+	font-size: 12px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 12px;
+	text-decoration-line: underline;
+}
+.dropdownCard {
+	border-radius: 10px;
+	background: rgba(215, 254, 81, 0.05);
+	box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+	backdrop-filter: blur(12.5px);
+	display: inline-flex;
+	padding: 27px;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	gap: 27px;
+}

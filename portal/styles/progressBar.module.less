@@ -1,0 +1,81 @@
+.legend,
+.legend1,
+.legend2,
+.legend3 {
+  position: relative;
+  padding-left: 10px;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: -5px; /* 调整竖线位置 */
+    width: 11.221px;
+    height: 11.221px;
+    border-radius: 1px;
+    background: linear-gradient(90deg, #4B5F30 44.83%, #C0E44C 109.57%);
+  }
+}
+.legend1 {
+  &::before {
+    background: linear-gradient(90deg, #C0E44C 55.55%, #D7FE51 110.6%);
+  }
+}
+.legend2 {
+  &::before {
+    background: linear-gradient(90deg, #D7FE51 72.79%, #EBFFA8 122.73%);
+  }
+}
+.legend3 {
+  &::before {
+    border-radius: 1px;
+    background: var(--lighter-vibrant-green, #EBFFA8);
+  }
+}
+.number,
+.number1,
+.number2,
+.number3 {
+  position: relative;
+  cursor: pointer;
+}
+
+.number:hover::after,
+.number1:hover::after,
+.number2:hover::after,
+.number3:hover::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-bottom: 1px solid #85A13E;;
+}
+
+.number::before,
+.number1::before,
+.number2::before,
+.number3::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 30%; /* 根据需要调整下划线长度 */
+  border-bottom: 1px solid #85A13E;
+}
+.number1:hover::after {
+  border-bottom: 1px solid #C1E54D;
+}
+.number1::before {
+  border-bottom: 1px solid #C1E54D;
+}
+.number2:hover::after {
+  border-bottom: 1px solid #D8FF52;
+}
+.number2::before {
+  border-bottom: 1px solid #D8FF52;
+}
+.number3:hover::after {
+  border-bottom: 1px solid #EBFFA8;
+}
+.number3::before {
+  border-bottom: 1px solid #EBFFA8;
+}
